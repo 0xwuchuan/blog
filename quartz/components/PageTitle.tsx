@@ -8,7 +8,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <h1 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir}>
+      <a id="pageTitle" href={baseDir}>
         <span id="accent0x">0x</span>
         {title}
       </a>
@@ -21,8 +21,12 @@ PageTitle.css = `
   margin: 0;
 }
 
+#pageTitle {
+  color: #EBEBEC;
+}
+
 #accent0x {
-  color: #59595A
+  color: #59595A;
 }
 `
 
