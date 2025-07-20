@@ -2,6 +2,8 @@
 title: About Me
 ---
 
+# About Me
+
 Hey, I'm Wu Chuan. Currently working as a Software Engineer at OKX.
 
 I try to document different topics here, ranging from technical notes to personal reflections and learnings
