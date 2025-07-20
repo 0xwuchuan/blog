@@ -30,6 +30,26 @@ document.addEventListener("nav", () => {
     window.addCleanup(() => darkmodeButton.removeEventListener("click", switchTheme))
   }
 
+  // Add keyboard shortcut for 'd' key
+  const handleKeyPress = (e: KeyboardEvent) => {
+    if (e.key === "d" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      // Check if focus is not on an input element
+      const activeElement = document.activeElement
+      if (activeElement && (
+        activeElement.tagName === "INPUT" || 
+        activeElement.tagName === "TEXTAREA" || 
+        activeElement.contentEditable === "true"
+      )) {
+        return
+      }
+      e.preventDefault()
+      switchTheme()
+    }
+  }
+
+  document.addEventListener("keydown", handleKeyPress)
+  window.addCleanup(() => document.removeEventListener("keydown", handleKeyPress))
+
   // Listen for changes in prefers-color-scheme
   const colorSchemeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
   colorSchemeMediaQuery.addEventListener("change", themeChange)
