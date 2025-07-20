@@ -1,6 +1,52 @@
 @use "sass:map";
 
 /**
+ * Flexoki Color Palette Implementation
+ * Based on https://stephango.com/flexoki
+ */
+
+// Flexoki Dark Mode (default)
+$tx-dark: #cecdc3; // base-200
+$tx-2-dark: #878580; // base-500
+$tx-3-dark: #575653; // base-700
+$bg-dark: #100f0f; // black
+$bg-2-dark: #1c1b1a; // base-950
+$ui-dark: #282726; // base-900
+$ui-2-dark: #343331; // base-850
+$ui-3-dark: #403e3c; // base-800
+
+// Flexoki Light Mode
+$tx-light: #100f0f; // black
+$tx-2-light: #6f6e69; // base-600
+$tx-3-light: #b7b5ac; // base-300
+$bg-light: #fffcf0; // paper
+$bg-2-light: #f2f0e5; // base-50
+$ui-light: #e6e4d9; // base-100
+$ui-2-light: #dad8ce; // base-150
+$ui-3-light: #cecdc3; // base-200
+
+// Flexoki Accent Colors
+$red-dark: #d14d41;
+$red-light: #af3029;
+$orange-dark: #da702c;
+$orange-light: #bc5215;
+$yellow-dark: #d0a215;
+$yellow-light: #ad8301;
+$green-dark: #879a39;
+$green-light: #66800b;
+$cyan-dark: #3aa99f;
+$cyan-light: #24837b;
+$blue-dark: #4385be;
+$blue-light: #205ea6;
+$purple-dark: #8b7ec8;
+$purple-light: #5e409d;
+$magenta-dark: #ce5d97;
+$magenta-light: #a02f6f;
+
+// Typography System (keep minimal for Chivo headers only)
+$font-chivo: "Chivo", sans-serif;
+
+/**
  * Layout breakpoints
  * $mobile: screen width below this value will use mobile styles
  * $desktop: screen width above this value will use desktop styles

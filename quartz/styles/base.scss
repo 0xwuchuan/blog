@@ -4,6 +4,20 @@
 @use "./syntax.scss";
 @use "./callouts.scss";
 
+// Simple Flexoki color mapping to existing Quartz variables
+:root {
+  // Dark mode colors (default)
+  --light: #{$bg-dark};
+  --lightgray: #{$ui-2-dark};
+  --gray: #{$tx-3-dark};
+  --darkgray: #{$tx-dark};
+  --dark: #{$tx-dark};
+  --secondary: #{$tx-2-dark};
+  --tertiary: #{$cyan-dark};
+  --highlight: #{$ui-dark};
+  --textHighlight: #{$ui-dark};
+}
+
 html {
   scroll-behavior: smooth;
   text-size-adjust: none;
@@ -362,7 +376,7 @@ h4,
 h5,
 h6,
 thead {
-  font-family: var(--headerFont);
+  font-family: #{$font-chivo};
   color: var(--dark);
   font-weight: revert;
   margin-bottom: 0;
