@@ -37,14 +37,11 @@ PageTitle.css = `
 
 .page-title .title-main {
   color: var(--dark);
+  transition: color 0.2s ease;
 }
 
-#pageTitle {
-  color: #EBEBEC;
-}
-
-#accent0x {
-  color: #59595A;
+.page-title a:hover .title-main {
+  color: var(--tertiary);
 }
 `
 
