@@ -138,3 +138,8 @@ The site builds to the `public/` directory and can be deployed to any static hos
 ## Development Best Practices
 
 - Instead of making custom changes, by default try as much as possible to use the provided configuration methods through QuartzV4
+
+## Content Creation Guidelines
+
+- When asked to create a draft, ensure that the frontmatter has `draft: true`
+- Do not paraphrase the content that the human has asked to add
